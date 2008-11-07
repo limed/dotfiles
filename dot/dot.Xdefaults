@@ -1,0 +1,53 @@
+! New URxvt color setting
+!urxvt.termName: xterm-color
+!URxvt.foreground: #8080FF
+!URxvt.background: black
+!URxvt.color4: #3842ff
+!URxvt.color12: #3842ff
+!URxvt.scrollBar: false
+!URxvt.saveLines: 8192
+
+! Old URxvt color setting
+urxvt.termName: rxvt
+URxvt.foreground: white
+URxvt.background: black
+URxvt.scrollBar: false
+URxvt.saveLines: 8192
+URxvt*secondaryScroll: true
+
+! Aterm color setting
+Aterm.scrollBar: false
+Aterm.foreground: white
+Aterm.background: black
+Aterm.fading: 40
+!aterm.font: -*-aqui-*-*-*-*-*-*-*-*-*-*-*-1
+!Aterm*font: -misc-fixed-medium-r-normal-*-*-120-*-*-c-*-iso8859-15
+
+! Xterm Color setting
+XTerm*saveLines:  1536
+XTerm.charClass: 33:48,35:48,37:48,43:48,45-47:48,58:48,64:48,95:48,126:48,35:48
+!black
+XTerm.color0:   rgb:00/00/00
+XTerm.color8:   rgb:60/60/60
+!red
+XTerm.color1:   rgb:a7/82/71
+XTerm.color9:   rgb:87/62/51
+!green
+XTerm.color2:   rgb:a2/bc/8d
+XTerm.color10:  rgb:6b/7c/5d
+!yellow
+XTerm.color3:   rgb:80/80/50
+XTerm.color11:  rgb:a0/a0/70
+!blue
+XTerm.color4:   rgb:61/7b/aa
+XTerm.color12:  rgb:5b/73/a0
+!magenta
+XTerm.color5:   rgb:a0/70/a0
+!XTerm.color13:  rgb:a8/78/a8
+!cyan
+XTerm.color6:   rgb:52/88/8e
+XTerm.color14:  rgb:66/aa/b2
+!white
+XTerm.color7:   rgb:b0/b0/b0
+XTerm.color15:  rgb:b0/b0/b0
+Xterm.cursorColor: gray
