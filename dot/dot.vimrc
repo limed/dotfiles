@@ -5,7 +5,9 @@
 
 "------------ editor behaviour block ------------------
 set ruler                       " show curser position at all times
-set sw=4                     	" Use 4 spaces when text is indented
+set expandtab
+set shiftwidth=4                " Use 4 spaces when text is indented
+set softtabstop=4
 set tabstop=4                   " sets how many spaces a tab is
 set ai                          " auto indent
 set et                          " tabs converted to spaces, uncomment when needed
@@ -31,6 +33,7 @@ set foldmethod=marker           " fold method using markers
 "------------ Graphical block -----------------
 syntax on       " Turns on syntax highlighting
 color evening
+source /usr/share/vim/vim71/syntax/cfengine.vim
 set nu          " Line numbers
 
 " ------- Shows trailing whitespaces --------
