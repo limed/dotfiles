@@ -1,0 +1,54 @@
+# Editor
+#set editor="vim +':set textwidth=77' +':set wrap' +\`awk '/^$/ {print i+2; exit} {i++}' %s\` %s"
+set editor="vim +':set wrap' +\`awk '/^$/ {print i+2; exit} {i++}' %s\` %s"
+
+# headers
+set edit_headers
+ignore *
+unignore Subject: Date: From: Reply-To: To: CC: BCC: X-Mailer: User-Agent:
+
+# In this order
+unhdr_order *
+hdr_order From: To: Reply-To: CC: BCC: Date: Subject: X-Mailer: User-Agent:
+
+#----- Client behaviour --------
+set hidden_host                         # Hide host details.
+set ssl_starttls=yes			        # Use tls
+set copy                                # Save a copy of sent mail
+set delete=ask-yes                      # Ask before doing a delete.
+set include=yes                         # Include the message in replies.
+set indent_str="> "                     # set quotemark to 1 byte
+set forward_format="Fw: %s"             # subject in forwarded messages
+set sort_aux=date-received              # Sort threads by date received.
+set abort_nosubject=no                  # Abort, if message has no subject.
+set abort_unmodified=yes                # Abort, if message wasn't edited.
+set mime_forward=ask-no                 # use MIME when forwarding mails.
+set move=no                             # Move mail-spool to $mbox?
+set postpone=ask-yes                    # ask for postponing when doing an Abort.
+set print=ask-yes                       # ask whether you really want to print.
+set quit=ask-yes                        # ask before quitting.
+set recall=no                           # ask for using postponed message.
+set reply_to=yes                        # Use or ignore Reply-To.
+set pager_stop                          # Stop at the end of a message
+set pager_index_lines=10                # number of lines for pager display
+set timeout=60                          # time in seconds, till Mutt looks for new mail
+set mail_check=3                        # time (in seconds) how often buffy checks for new mail
+set nomark_old                          # dont mark old messages old
+unset mark_old
+set markers=no                          # no + on wrapped lines
+set sig_on_top=yes                      # set signature on top
+
+# ------ Mime stuff --------
+auto_view *
+mime_lookup application/octet-stream  	# See if it is really the correct MIME type, otherwise change it.
+mime_lookup text/plain            	    # See if it is really the correct MIME type, otherwise change it.
+alternative_order text/plain text/enriched text/html
+
+
+# -------- Other source files ---------
+source ~/.mutt/colors                     # defines color
+source ~/.mutt/autoview                   # Define auto views
+source ~/.mutt/gpg.rc                     # gpg config
+
+push *
+push <show-version>

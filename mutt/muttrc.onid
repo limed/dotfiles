@@ -1,0 +1,24 @@
+# limed's muttrc file
+# @author: Ed Lim <limed@net.oregonstate.edu>
+
+set spoolfile="imap://limed@imap.onid.oregonstate.edu/INBOX"
+set folder="imap://limed@imap.onid.oregonstate.edu"
+set imap_user = "limed@onid.oregonstate.edu"
+set smtp_url="smtp://limed@mail.oregonstate.edu/"
+set hostname=onid.oregonstate.edu
+set certificate_file=~/.mutt/certificates/certificates.onid
+
+#set index_format ="[%4C] %{%b %d} %-15.15L [%Z] %s"
+
+set from="limed@onid.oregonstate.edu"
+set realname="Ed Lim"
+set header_cache=~/.mutt/cache/headers.onid
+set message_cachedir=~/.mutt/cache/bodies.onid
+
+set record="=sent-mail"                 # saves sent mail to sent folder
+set postponed="=saved-messages"         # postponed messages go to saved-messages
+
+set signature=~/.mutt/signature/signature.onid
+
+source ~/.mutt/mailboxes/mailboxes.onid
+source ~/.mutt/settings

@@ -1,0 +1,20 @@
+# -*- muttrc -*-
+#
+# List of folders that are considered to be "mailboxes" (folders that
+# receive incoming mail).
+#
+
+mailboxes !
+mailboxes =INBOX
+mailboxes =net
+mailboxes =outages
+mailboxes =reports
+mailboxes =bandwidth-report
+mailboxes =security
+mailboxes =dca-all
+mailboxes =onms
+mailboxes =debian-security
+mailboxes =bugtraq
+mailboxes =bind-users
+mailboxes =high-ed
+mailboxes =cfengine-help

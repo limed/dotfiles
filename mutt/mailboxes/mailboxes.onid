@@ -1,0 +1,15 @@
+# -*- muttrc -*-
+#
+# List of folders that are considered to be "mailboxes" (folders that
+# receive incoming mail).
+#
+
+mailboxes !
+mailboxes =INBOX
+mailboxes =Linux
+mailboxes =ampache-dev
+mailboxes =cs-pro
+mailboxes =cs440
+mailboxes =sent-mail
+mailboxes =junk-mail
+mailboxes =Trash
