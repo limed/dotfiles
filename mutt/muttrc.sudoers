@@ -1,18 +1,19 @@
-set imap_user = "limed@sudoers.org"
-#set imap_pass = "password"
+# Muttrc for sudoers.org domain
+# @author: Ed Lim <limed@sudoers.org>
 
+set imap_user = "limed@sudoers.org"
 set smtp_url = "smtp://el.eujin@smtp.gmail.com:587/"
-#set smtp_pass = "password"
 set from = "limed@sudoers.org"
 set realname = "Ed Lim"
 
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set postponed="+[Gmail]/Drafts"
+set record="+[Gmail]/Sent Mail"
 
-set header_cache=~/.mutt/cache/headers.gmail
-set message_cachedir=~/.mutt/cache/bodies.gmail
-set certificate_file=~/.mutt/certificates/certificates.gmail
+set header_cache=~/.mutt/cache/headers.sudoers
+set message_cachedir=~/.mutt/cache/bodies.sudoers
+set certificate_file=~/.mutt/certificates/certificates.sudoers
 
 set signature=~/.mutt/signature/signature.gmail
 
