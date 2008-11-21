@@ -1,14 +1,15 @@
-set imap_user = "el.eujin@gmail.com"
-#set imap_pass = "password"
+# Mutt config for gmail email
+# @author: Ed Lim <el.eujin@gmail.com>
 
+set imap_user = "el.eujin@gmail.com"
 set smtp_url = "smtp://el.eujin@smtp.gmail.com:587/"
-#set smtp_pass = "password"
 set from = "el.eujin@gmail.com"
 set realname = "Ed Lim"
 
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set postponed="+[Gmail]/Drafts"
+set record="+[Gmail]/Sent Mail"
 
 set header_cache=~/.mutt/cache/headers.gmail
 set message_cachedir=~/.mutt/cache/bodies.gmail
