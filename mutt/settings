@@ -37,6 +37,7 @@ set nomark_old                          # dont mark old messages old
 unset mark_old
 set markers=no                          # no + on wrapped lines
 set sig_on_top=yes                      # set signature on top
+set sort=threads
 
 # ------ Mime stuff --------
 auto_view *
