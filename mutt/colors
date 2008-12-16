@@ -55,6 +55,7 @@ color index     brightblue      default ~D                      # deleted messag
 # text colors - pager
 #color hdrdefault blue           default                         # headers
 #color header   yellow          default "^(from|subject|to):"   # header from: subject: to:
+color hrdrdefault   cyan        default
 color bold      green           default                         # bold on mails' body
 color underline yellow          default                         # underlined
 color attachment color5         default                         # attachments
