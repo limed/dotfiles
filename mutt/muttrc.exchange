@@ -1,0 +1,20 @@
+# Mutt config for gmail email
+# @author: Ed Lim <el.eujin@gmail.com>
+
+set imap_user = "edward.lim@oregonstate.edu"
+set smtp_url = "smtp://mail.oregonstate.edu/"
+set from = "Edward.Lim@oregonstate.edu"
+set realname = "Ed Lim"
+
+set folder = "imaps://exmail.oregonstate.edu"
+set spoolfile = "imaps://exmail.oregonstate.edu/INBOX"
+set postponed="=Drafts"
+set record="=Sent Mail"
+
+set header_cache=~/.mutt/cache/headers.exchange
+set message_cachedir=~/.mutt/cache/bodies.exchange
+set certificate_file=~/.mutt/certificates/certificates.exchange
+
+set signature=~/.mutt/signature/signature.exchange
+
+source ~/.mutt/settings
