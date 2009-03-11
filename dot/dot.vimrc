@@ -32,7 +32,8 @@ set foldmethod=marker           " fold method using markers
 
 "------------ Graphical block -----------------
 syntax on       " Turns on syntax highlighting
-color evening
+"color evening
+color desert
 source /usr/share/vim/vim71/syntax/cfengine.vim
 set nu          " Line numbers
 

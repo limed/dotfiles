@@ -31,8 +31,8 @@ set recall=no                           # ask for using postponed message.
 set reply_to=yes                        # Use or ignore Reply-To.
 set pager_stop                          # Stop at the end of a message
 set pager_index_lines=10                # number of lines for pager display
-set timeout=60                          # time in seconds, till Mutt looks for new mail
-set mail_check=3                        # time (in seconds) how often buffy checks for new mail
+set timeout=10                          # time in seconds, till Mutt looks for new mail
+set mail_check=60                        # time (in seconds) how often buffy checks for new mail
 set nomark_old                          # dont mark old messages old
 unset mark_old
 set markers=no                          # no + on wrapped lines
