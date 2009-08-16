@@ -2,7 +2,7 @@
 # @author: Ed Lim <el.eujin@gmail.com>
 
 set imap_user = "edward.lim@oregonstate.edu"
-set smtp_url = "smtp://limed@mail.oregonstate.edu/"
+set smtp_url = "smtps://limed@mail.oregonstate.edu/"
 set from = "Edward.Lim@oregonstate.edu"
 set realname = "Ed Lim"
 

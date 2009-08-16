@@ -1,10 +1,10 @@
 # limed's muttrc file
 # @author: Ed Lim <limed@net.oregonstate.edu>
 
-set spoolfile="imap://limed@imap.onid.oregonstate.edu/INBOX"
-set folder="imap://limed@imap.onid.oregonstate.edu"
+set spoolfile="imaps://limed@imap.onid.oregonstate.edu/INBOX"
+set folder="imaps://limed@imap.onid.oregonstate.edu"
 set imap_user = "limed@onid.oregonstate.edu"
-set smtp_url="smtp://limed@mail.oregonstate.edu/"
+set smtp_url="smtps://limed@mail.oregonstate.edu/"
 set hostname=onid.oregonstate.edu
 set certificate_file=~/.mutt/certificates/certificates.onid
 
