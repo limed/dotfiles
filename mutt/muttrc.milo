@@ -4,7 +4,7 @@
 set spoolfile="imaps://limed@milo.nws.orst.edu/inbox"
 set folder="imaps://limed@milo.nws.orst.edu/mail"
 set imap_user="limed@milo.nws.orst.edu"
-set smtp_url="smtp://limed@mail.oregonstate.edu/"
+set smtp_url="smtps://limed@mail.oregonstate.edu/"
 set hostname=net.oregonstate.edu          # Name of our local host.
 set certificate_file=~/.mutt/certificates/certificates.milo
 
