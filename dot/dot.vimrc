@@ -34,7 +34,11 @@ set foldmethod=marker           " fold method using markers
 syntax on       " Turns on syntax highlighting
 "color evening
 color desert
-source /usr/share/vim/vim71/syntax/cfengine.vim
+
+if filereadable ("/usr/share/vim/vim71/syntax/cfengine.vim")
+    source /usr/share/vim/vim71/syntax/cfengine.vim
+endif
+
 set nu          " Line numbers
 
 " ------- Shows trailing whitespaces --------
