@@ -1,6 +1,6 @@
 # Editor
 #set editor="vim +':set textwidth=77' +':set wrap' +\`awk '/^$/ {print i+2; exit} {i++}' %s\` %s"
-set editor="vim +':set wrap' +\`awk '/^$/ {print i+2; exit} {i++}' %s\` %s"
+set editor="vim +':set spell' +':set wrap' +\`awk '/^$/ {print i+2; exit} {i++}' %s\` %s"
 
 # headers
 set edit_headers
