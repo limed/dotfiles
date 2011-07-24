@@ -1,19 +1,11 @@
-! New URxvt color setting
-!urxvt.termName: xterm-color
-!URxvt.foreground: #8080FF
-!URxvt.background: black
-!URxvt.color4: #3842ff
-!URxvt.color12: #3842ff
-!URxvt.scrollBar: false
-!URxvt.saveLines: 8192
-
-! Old URxvt color setting
+! URxvt color setting
 urxvt.termName: rxvt
 URxvt.foreground: white
 URxvt.background: black
 URxvt.scrollBar: false
 URxvt.saveLines: 8192
 URxvt*secondaryScroll: true
+URxvt*geometry: 90x30
 
 ! Aterm color setting
 Aterm.scrollBar: false
