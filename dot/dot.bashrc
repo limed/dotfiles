@@ -7,16 +7,14 @@ umask 022
 PATH="$HOME/bin:$PATH:/usr/local/share"
 export PATH
 export EDITOR=/usr/bin/vim
+export HISTFILE=~/.bash_history
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=200
+export HISTSIZE=200
 
-declare -x HISTFILE=~/.bash_history
-declare -x HISTCONTROL=ignoreboth
-declare -x HISTFILESIZE=50
-declare -x HISTSIZE=50
-
-bind 'set bell-style visible'
-
+# make sure keychain runs
 if [ -f /usr/bin/keychain ]; then
-	keychain $HOME/.ssh/id_rsa
+	keychain $HOME/.ssh/id_rsa $HOME/.ssh/id_dsa
 	source $HOME/.keychain/$HOSTNAME-sh
 fi
 
@@ -41,7 +39,6 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color)
-    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u@\h\][\033[00m\][\033[01;34m\][\w\][\033[00m\]\$ '
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\][\u@\h]\033[00m\]\033[01;34m\][\w]\033[00m\]\$ '
 	;;
 *)
@@ -49,9 +46,6 @@ xterm-color)
     #PS1='${debian_chroot:+($debian_chroot)}[\u@\h][\w]$ '
     ;;
 esac
-
-# Comment in the above and uncomment this below for a color prompt
-#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -87,7 +81,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 if [ $(id -u) -eq 0 ]; then # you are root, set red colour prompt
-       	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
 else
 	PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
