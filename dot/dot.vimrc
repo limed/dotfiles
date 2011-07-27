@@ -1,16 +1,17 @@
 "-------------------------------------------------
 "  vimrc file for ed lim
-"  @author - Ed Lim <limed@sudoers.org>
+"  @author - Ed Lim <limed@onid.oregonstate.edu>
 "-------------------------------------------------
 
 "------------ editor behaviour block ------------------
-set ruler                       " show curser position at all times
-set expandtab
 set shiftwidth=4                " Use 4 spaces when text is indented
 set softtabstop=4
 set tabstop=4                   " sets how many spaces a tab is
-set ai                          " auto indent
-set et                          " tabs converted to spaces, uncomment when needed
+set smarttab
+set expandtab
+set autoindent                  " auto indent
+set smartindent                 " smart indent
+set ruler                       " show curser position at all times
 set incsearch                   " incremental search
 set nohlsearch                  " no highlight on searching
 set nowrap                      " no text wraps
@@ -34,12 +35,11 @@ set foldmethod=marker           " fold method using markers
 syntax on       " Turns on syntax highlighting
 "color evening
 color desert
-
-if filereadable ("/usr/share/vim/vim71/syntax/cfengine.vim")
-    source /usr/share/vim/vim71/syntax/cfengine.vim
-endif
-
 set nu          " Line numbers
+
+if filereadable ("/usr/share/vim/vim72/syntax/cfengine.vim")
+    source /usr/share/vim/vim72/syntax/cfengine.vim
+endif
 
 " ------- Shows trailing whitespaces --------
 highlight WhitespaceEOL ctermbg=red guibg=red
@@ -62,3 +62,8 @@ autocmd BufWritePre    * :call TrimWhiteSpace()
 :map cx v:s!^\s*//!!g <CR>v=<CR>
 :vmap cc :s!^!//!g <CR>
 :vmap cx :s!^\s*//!!g <CR>v=
+
+" load indentation rules according to the detected filetype
+"if has("autocmd")
+"   filetype indent on
+"endif
