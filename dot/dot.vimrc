@@ -1,6 +1,6 @@
 "-------------------------------------------------
 "  vimrc file for ed lim
-"  @author - Ed Lim <limed@onid.oregonstate.edu>
+"  @author - Ed Lim <limed@sudoers.org>
 "-------------------------------------------------
 
 "------------ editor behaviour block ------------------
@@ -36,10 +36,6 @@ syntax on       " Turns on syntax highlighting
 "color evening
 color desert
 set nu          " Line numbers
-
-if filereadable ("/usr/share/vim/vim72/syntax/cfengine.vim")
-    source /usr/share/vim/vim72/syntax/cfengine.vim
-endif
 
 " ------- Shows trailing whitespaces --------
 highlight WhitespaceEOL ctermbg=red guibg=red
