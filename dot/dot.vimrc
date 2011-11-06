@@ -30,15 +30,12 @@ set novisualbell                " no sound on error
 set title                       " Shows title in console window
 set ls=2                        " always show status line
 set foldmethod=marker           " fold method using markers
+set nocompatible
 
 "------------ Graphical block -----------------
 syntax on       " Turns on syntax highlighting
 color desert
 set nu          " Line numbers
-
-if filereadable ("/usr/share/vim/vim72/syntax/cfengine.vim")
-    source /usr/share/vim/vim72/syntax/cfengine.vim
-endif
 
 " ------- Shows trailing whitespaces --------
 highlight WhitespaceEOL ctermbg=red guibg=red
@@ -61,8 +58,3 @@ autocmd BufWritePre    * :call TrimWhiteSpace()
 :map cx v:s!^\s*//!!g <CR>v=<CR>
 :vmap cc :s!^!//!g <CR>
 :vmap cx :s!^\s*//!!g <CR>v=
-
-" load indentation rules according to the detected filetype
-"if has("autocmd")
-"   filetype indent on
-"endif

@@ -1,1 +1,6 @@
 Some config files for some of the stuff I use
+
+* To install *
+- Still a work in progress but run the make file and it should
+install all the files in the right location
+- At the moment it should just install the .bash* files and vimrc configs
